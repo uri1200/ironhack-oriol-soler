@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and align</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 30px auto;
+    }
+
+    .box {
+        background-color: whitesmoke;
+        border: solid 1px black;
+        margin: 0 0 10px 0;
+        padding: 20px;
+    }
+
+    .box p {
+        text-align: justify;
+    }
+
+    #box-2 {
+        float: left;
+        width: 65%;
+    }
+
+    #box-3 {
+        float: right;
+        width: 30%;
+
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>Heading of my website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi! Ullam
+                alias quam accusantium.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Blog posts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi! Ullam
+                alias quam accusantium.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>Recent projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi! Ullam
+                alias quam accusantium.</p>
+        </div>
+        <div class="clear"></div>
+        <div class="box" id="box-4">
+            <a href="">Check out my linkedin</a>
+        </div>
+    </div>
+</body>
+
+</html>

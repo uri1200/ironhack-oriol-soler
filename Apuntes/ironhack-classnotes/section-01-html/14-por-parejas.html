@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+        .formInputContainer {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem 0rem;
+        }
+
+        .formInputContainer label {
+            margin-bottom: 1rem;
+        }
+
+        select {
+            padding: 0.5rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /* Band Registration Form */
+        #personalinformationForm {
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 25px auto;
+        }
+
+        #personalinformationForm h4,
+        p {
+            text-align: center;
+        }
+
+        #personalinformationForm input[type="submit"] {
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        #personalinformationForm input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- EXAMPLE #1 - BAND REGISTRATION FORM -->
+    <section id="form-1">
+        <!-- form element -->
+        <form onsubmit="mostrarForm()" id="personalinformationForm">
+            <h4>User Registration</h4>
+            <p>Register your account</p>
+            <!-- Name -->
+            <div class="formInputContainer">
+                <label class="formLabel" for="name">Name</label>
+                <input type="text" placeholder="Enter your name here" id="name" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="age">Age</label>
+                <input type="number" placeholder="Enter your age here" id="age" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email here" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="password">Password</label>
+                <input type="password" maxlength="15" id="password" placeholder="Enter your email here" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="cardNumber">Card Number</label>
+                <input type="number" min="-9999999999999999" max="9999999999999999"
+                    placeholder="Enter your card number here" id="cardNumber" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="favouriteColor">Favourite Color</label>
+                <input type="color" placeholder="Enter your favourite color here" id="favouriteColor" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="address">Address</label>
+                <input type="address" placeholder="Enter your address here" id="address" />
+            </div>
+            <div class="formInputContainer">
+                <label class="formLabel" for="uploadFile"></label>
+                <input type="file" id="uploadFile" />
+            </div>
+
+            <input type="submit" value="Submit" id="submitForm" />
+        </form>
+    </section>
+
+    <script>
+        // Band Information Form
+        function mostrarForm() {
+
+            let name = document.querySelector("#name").value;
+            let dateOfBirth = document.querySelector("#dateOfBirth").value;
+            let age = document.querySelector("#age").value;
+            let email = document.querySelector("#email").value;
+            let password = document.querySelector("#password").value;
+            let cardNumber = document.querySelector("#cardNumber").value;
+            let favouriteColor = document.querySelector("#favouriteColor").value;
+            let address = document.querySelector("#address").value;
+
+            alert('Name: ' + name + ' Date Of Birth: ' + dateOfBirth + ' Age: ' + age + 'Email: ' + email + ' Password: ' + password +
+                ' Card Number: ' + cardNumber + ' Favourite Color: ' + favouriteColor + ' Address: ' + address)
+        }
+
+    </script>
+</body>
+
+</html>

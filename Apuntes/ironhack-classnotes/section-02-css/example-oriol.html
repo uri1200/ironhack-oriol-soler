@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and align</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+        max-width: 80%;
+        align-content: center;
+        margin: auto;
+    }
+
+    .container {
+        margin: 30px auto;
+    }
+
+    .box {
+        background-color: whitesmoke;
+        border: solid 1px black;
+        margin: 0 0 10px 0;
+        padding: 20px;
+    }
+
+    .box p {
+        text-align: justify;
+    }
+
+    .box-2 {
+        float: left;
+        width: 48%;
+    }
+
+    .box-3 {
+        float: right;
+        width: 48%;
+
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .button-link {
+        background-color: red;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5%;
+    }
+
+    .button-link:hover {
+        background-color: #002ead;
+        transition: 0.7s;
+    }
+
+
+    .button-footer {
+        background-color: rgb(144, 20, 168);
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5%;
+    }
+
+    .button-footer:hover {
+        background-color: rgb(218, 98, 118);
+        transition: 0.2s;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="box box-header">
+            <h3>Heading of my website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi! Ullam
+                alias quam accusantium.</p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="box box-2">
+                <h3>HTML AND CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                    ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi!
+                    Ullam
+                    alias quam accusantium.</p>
+                <a href="" class="button-link">Html & CSS</a>
+            </div>
+            <div class="box box-3">
+                <h3>JS AND VUE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit tempora nostrum rerum
+                    ipsa. Deserunt dolorum, dicta porro corrupti unde natus labore. Impedit eius consequuntur nisi!
+                    Ullam
+                    alias quam accusantium.</p>
+                <a href="" class="button-link">JS & VUE</a>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="clear"></div>
+        <div class="box" id="box-4">
+            <a href="">Check out my linkedin</a>
+            <button class="button-footer">Button Footer</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
