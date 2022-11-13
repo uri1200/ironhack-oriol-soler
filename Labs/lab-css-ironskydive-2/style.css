@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+
+/* Blue	rgb(67, 163, 230);
+Dark Blue	rgb(25, 33, 41);
+Text	rgb(0, 0, 0); */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed"
+}
+
+h1 {
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+  line-height: 1em;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-bar {
+  background-color: rgb(25, 33, 41);
+  padding: 14px 0;
+}
+.nav-bar a {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.quote {
+  font-size: 2.5em;
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
+}
+
+.dark-background {
+  background-color: rgb(25, 33, 41);
+  color: white;
+}
+
+.text {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.link-btn {
+  background-color: rgb(67, 163, 230);
+  color: white;
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+
+}
+
+.service-box img {
+  width: 125px;
+}
+
+#team .section-text {
+  font-size: 1.9em;
+  text-align: center;
+}
+
+#team .member-name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#team img {
+  width: 250px;
+  height: 180px;
+}
+
+ .footer {
+  font-size: 1.9em;
+  text-align: center;
+  padding: 40px 100px;
+  margin-bottom: 25px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: rgb(67, 163, 230);
+  text-decoration: none;
+}
+
+.nav-bar-ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
