@@ -49,3 +49,5 @@ console.log(document.querySelector(".hipHop"));
 console.log(document.querySelector("h5"));
 console.log(document.querySelector("body"));
 console.log(document.querySelector("#query-selector .hipHop .myLove"));
+
+console.log(document.querySelector("h1"))
