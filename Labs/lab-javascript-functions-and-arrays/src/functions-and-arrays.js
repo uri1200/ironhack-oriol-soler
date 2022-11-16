@@ -121,14 +121,11 @@ const wordsCount = [
 
 function howManyTimes(wordsCount, word) {
 
-  if (wordsCount.length == 0)
-    return 0;
-  else {
-    let counter=0;
-    wordsCount.forEach(element => element == word ? counter+1 : counter+0);
-    return counter;
-
-  }
+  let counter = 0;
+  for (let i = 0; i < wordsCount.length; i++) 
+   if(wordsCount[i] == word)
+   counter++;
+  return counter;
 }
 
 console.log(howManyTimes(wordsCount, 'matter'));
