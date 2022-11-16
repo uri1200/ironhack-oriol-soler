@@ -6,3 +6,179 @@ Green: #00B172
 White: #FFF
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px red solid;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.head-spoty-logo {
+    width: 160px;
+    padding: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 0 16px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+
+
+.section-1 {
+    height: 500px;
+    background-image: url("../images/landing1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.centered-header {
+    width: 60%;
+}
+
+.centered-header p {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.centered-header h1 {
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+
+.section-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-2 h1 {
+    color: #00B172;
+    font-weight: 500;
+    font-size: 2.5rem;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-2 h2 {
+    color: #00B172;
+}
+
+
+.section-2-div {
+    display: flex;
+    align-items: column;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.section-2-div-internal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.section-2-div-internal img {
+
+    width: 100px;
+
+
+}
+
+
+.section-3 {
+    width: 95%;
+    background-color: #00B172;
+    margin: auto;
+}
+
+.section-3-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    padding: 50px;
+
+}
+
+.section-3-div-internal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.section-3-div-internal1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+}
+
+.section-3-div-internal2 img {
+    width: 150px;
+}
+
+.section-3-div-internal3 img {
+    width: 400px;
+}
+
+.section-3-div h1 {
+    width: 90%;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.section-3-div h2 {
+    font-weight: 500;
+}
