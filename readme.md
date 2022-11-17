@@ -7,10 +7,13 @@
   Este repositorio sirve como una guia para la clase de FE Dev - Vue Conforcat. Done estaremos apendiendo acerca de HTML, CSS3, Javascript, Vue & Supabase.
 </p>
  <p align="center" style="font: 16px">
- Creado con ❤️ por Diegoo Zito, Carlos Garrido & Aleix Abuli.
+ Creado con ❤️ por Diego Zito, Carlos Garrido & Aleix Abuli.
 </p>
 <p align="center" style="font: 16px">
- Quote of the class "Qui no corre, vola"
+ Quote of the class
+</p>
+<p align="center" style="font:16px; font-style:italic">
+ "Qui no corre, vola"
 </p>
 
 ## Link a Zoom
@@ -60,6 +63,12 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Variables](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/05-variables.js)
   - [Operators](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/06-operators.js)
   - [Conditionals](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/07-conditionals.js)
+  - [Functions](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/08-functions.js)
+  - [Loops](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/09-loops.js)
+  - [Array Methods](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/10-array-methods.js)
+  - [Dom Manipulation #1](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/11-dom-manipulation.js)
+  - [Dom Manipulation #2](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/12-dom-manipulation-2.js)
+  - [Dom Manipulation #3 - HTML](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/12-dom.html)
 
 ## Links de Ayuda
 
