@@ -88,7 +88,31 @@
         numMod += -2;
         ex3h1.innerHTML = numMod;
       }
+
+      const btnchange3_2 = () => {
+        numMod = parseInt(ex3h1.innerHTML);
+        console.log(numMod);
+        numMod += -1;
+        ex3h1.innerHTML = numMod;
+      }
+
+      const btnchange3_3 = () => {
+        numMod = parseInt(ex3h1.innerHTML);
+        console.log(numMod);
+        numMod += 1;
+        ex3h1.innerHTML = numMod;
+      }
+
+      const btnchange3_4 = () => {
+        numMod = parseInt(ex3h1.innerHTML);
+        console.log(numMod);
+        numMod += 2;
+        ex3h1.innerHTML = numMod;
+      }
       ex3btn1.addEventListener('click', btnchange3_1);
+      ex3btn2.addEventListener('click', btnchange3_2);
+      ex3btn3.addEventListener('click', btnchange3_3);
+      ex3btn4.addEventListener('click', btnchange3_4);
 
 
       // Ejercicio 4. Class Toggle
