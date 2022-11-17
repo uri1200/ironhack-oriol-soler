@@ -3,11 +3,20 @@
 // How could you "clean" a bit this array and make it unified (without duplicates)?
 function getAllDirectors(moviesArray) {
     
-    const directorsArray = [];
-    for (let index = 0; index < moviesArray.length; index++) {
-        directorsArray.push(moviesArray[index].director);
-    }
-    return directorsArray;
+    //For take
+    // const directorsArray = [];
+    // for (let index = 0; index < moviesArray.length; index++) {
+    //     directorsArray.push(moviesArray[index].director);
+    // }
+    // return directorsArray;
+
+    const rawList = moviesArray.map((movie) => movie.director)
+    const cleanList = rawList.filter(
+        (director, pos) =>
+        rawList.indexOf(director) === pos
+    );
+
+    return cleanList
 
 }
 
@@ -68,11 +77,19 @@ function orderByYear(moviesArray) {
    
     return moviesArray2;
 }
-console.log(orderByYear(movies));
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(moviesArray) {
-    return moviesArray.sort((a,b) => (a.title > b.title) ? -1 : 1);
+
+    let moviesArray2 = [];
+    for (let i=0; i<moviesArray.length; i++){
+        moviesArray2.push(moviesArray[i].title)
+    }
+    
+    moviesArray2.sort((a,b) => (a.title > b.title) ? a.title : b.title);
+   
+    return moviesArray2;
 }
+//console.log(orderAlphabetically(movies));
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 function turnHoursToMinutes(moviesArray) {
