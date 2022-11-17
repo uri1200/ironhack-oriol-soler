@@ -62,7 +62,7 @@ function createProduct() {
     </td>
     <td class="subtotal">$<span>0</span></td>
     <td class="action">
-      <button onclick="removeProduct()" class="btn btn-remove">Remove</button>
+      <button onclick="removeProduct(event)" class="btn btn-remove">Remove</button>
     </td>`;
 
     const parent = document.querySelector("#cart tbody")
