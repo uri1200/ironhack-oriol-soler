@@ -48,10 +48,10 @@
       const ex1h1 = document.getElementById("ex1h1");
       const ex1btn = document.getElementById("ex1btn");
 
-      const btnchange1 = () => {
+
+      ex1btn.addEventListener('click',() => {
          ex1h1.innerHTML = "Ya me han dado click";
-      }
-      ex1btn.addEventListener('click', btnchange1);
+      });
 
      
 
@@ -63,13 +63,13 @@
       const ex2h1 = document.getElementById("ex2h1");
       const ex2btn = document.getElementById("ex2btn");
 
-      const btnchange2 = () => {
+
+      ex2btn.addEventListener('click', () => {
           if (ex2h1.innerText == "OFF")
             ex2h1.innerHTML = "ON";
           else
             ex2h1.innerHTML = "OFF";
-      }
-      ex2btn.addEventListener('click', btnchange2);
+      });
 
       // Ejercicio 3. Contador.
       // Vamos a crear un pequeño contador que sume y reste valores. Primero crearemos un <h1> con un valor inicial de '0'. Después crearemos CUATRO botones: el primero será "Doble click -2", el segundo "Click -1", el tercero "Click +1" y el cuarto "Doble click +2".
@@ -82,37 +82,30 @@
       const ex3btn3 = document.getElementById("ex3btn3");
       const ex3btn4 = document.getElementById("ex3btn4");
 
-      const btnchange3_1 = () => {
+      ex3btn1.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += -2;
         ex3h1.innerHTML = numMod;
-      }
-
-      const btnchange3_2 = () => {
+      });
+      ex3btn2.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += -1;
         ex3h1.innerHTML = numMod;
-      }
-
-      const btnchange3_3 = () => {
+      });
+      ex3btn3.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += 1;
         ex3h1.innerHTML = numMod;
-      }
-
-      const btnchange3_4 = () => {
+      });
+      ex3btn4.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += 2;
         ex3h1.innerHTML = numMod;
-      }
-      ex3btn1.addEventListener('click', btnchange3_1);
-      ex3btn2.addEventListener('click', btnchange3_2);
-      ex3btn3.addEventListener('click', btnchange3_3);
-      ex3btn4.addEventListener('click', btnchange3_4);
+      });
 
 
       // Ejercicio 4. Class Toggle
