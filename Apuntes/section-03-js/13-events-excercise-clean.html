@@ -92,7 +92,7 @@
       //   numMod += -2;
       //   ex3h1.innerHTML = numMod;
       // });
-      ex3btn1.onclick = () => {
+      ex3btn1.ondblclick = () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += -2;
@@ -111,7 +111,7 @@
         numMod += 1;
         ex3h1.innerHTML = numMod;
       });
-      ex3btn4.addEventListener('click', () => {
+      ex3btn4.addEventListener('dblclick', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += 2;
@@ -143,9 +143,23 @@
       // Cuando el user escriba alguna cosa en el input y le dé a añadir, lo que deberíamos hacer es coger el valor de ese input y añadirlo a nuestra ordered list.
       // Bonus: En caso de que el input esté vacío, deberíamos asegurarnos que no se añade una empty string a la lista, y que por ejemplo el input pase a tener un placeholder de 'Por favor, añade un elemento'
 
+
       const list = document.querySelector("ol");
       const input = document.getElementById("input");
+
+
       const ex5btn = document.getElementById("ex5btn");
+      ex5btn.addEventListener('click',() => {
+
+        if(!input.value) input.placeholder = 'Please enter a value';
+        else {
+          const liItem = document.createElement('li');
+          liItem.innerText = input.value;
+          list.appendChild(liItem);
+          input.value = '';
+        }
+      });
+
     </script>
   </body>
 </html>
