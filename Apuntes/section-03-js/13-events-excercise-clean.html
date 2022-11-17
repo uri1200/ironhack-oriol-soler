@@ -99,7 +99,6 @@
         ex3h1.innerHTML = numMod;
       };
 
-
       ex3btn2.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
@@ -126,6 +125,18 @@
       // Cuando el botón sea rojo y el user le vuelva a dar, deberíamos volver a setearlo a su estado inicial.
 
       const ex4btn = document.getElementById("ex4btn");
+
+      ex4btn.addEventListener('click',() => {
+        if (ex4btn.innerHTML == "I'm green" ) {
+          ex4btn.innerHTML = "I'm red";
+          ex4btn.style.backgroundColor = "red";
+        }
+        else {
+          ex4btn.innerHTML = "I'm green";
+          ex4btn.style.backgroundColor = "green";
+        }
+
+      });
 
       // Ejercicio 5. Añadir a listas con inputs - ADVANCED
       // Vamos a crear una ordered list que no contenga ningún elemento. Después creamos un input y un botón que contenga el texto "Añadir".
