@@ -65,10 +65,14 @@
 
 
       ex2btn.addEventListener('click', () => {
-          if (ex2h1.innerText == "OFF")
+          if (ex2h1.innerText == "OFF") {
             ex2h1.innerHTML = "ON";
-          else
+            ex2btn.innerHTML = "Apagar";
+          }
+          else {
             ex2h1.innerHTML = "OFF";
+            ex2btn.innerHTML = "Encender";
+          }
       });
 
       // Ejercicio 3. Contador.
@@ -82,12 +86,20 @@
       const ex3btn3 = document.getElementById("ex3btn3");
       const ex3btn4 = document.getElementById("ex3btn4");
 
-      ex3btn1.addEventListener('click', () => {
+      // ex3btn1.addEventListener('click', () => {
+      //   numMod = parseInt(ex3h1.innerHTML);
+      //   console.log(numMod);
+      //   numMod += -2;
+      //   ex3h1.innerHTML = numMod;
+      // });
+      ex3btn1.onclick = () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
         numMod += -2;
         ex3h1.innerHTML = numMod;
-      });
+      };
+
+
       ex3btn2.addEventListener('click', () => {
         numMod = parseInt(ex3h1.innerHTML);
         console.log(numMod);
