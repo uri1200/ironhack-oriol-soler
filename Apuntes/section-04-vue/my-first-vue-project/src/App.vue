@@ -6,26 +6,33 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 // import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
 // import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
+// import Methods from "./components/vueBasics/7-Methods.vue";
+// import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
+// import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
+//import Watchers from "./components/vueBasics/10-Watchers.vue";
+import Events from "./components/vueBasics/11-Events.vue";
+import Hooks from "./components/vueBasics/12-Hooks.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld alexis="Wu Tang Clan" />
+      <HelloWorld msg="Hooks" />
     </div>
   </header>
   <main>
     <!-- <MyFirstComponent /> -->
-    <!-- <hr /> -->
     <!-- <TextDirective /> -->
-    <!-- <hr /> -->
     <!-- <HtmlDirective /> -->
-    <!-- <hr />
-    <AttributeBinding /> -->
-    <!-- <hr />
-    <ConditionalRendering /> -->
-    <!-- <hr />
-    <IteratingElements /> -->
+    <!-- <AttributeBinding /> -->
+    <!-- <ConditionalRendering /> -->
+    <!-- <IteratingElements /> -->
+    <!-- <Methods /> -->
+    <!-- <ComputedProperties /> -->
+    <!-- <TwoWayDataBinding /> -->
+    <!-- <Watchers /> -->
+    <!-- <Events /> -->
+    <Hooks />
   </main>
 </template>
 
